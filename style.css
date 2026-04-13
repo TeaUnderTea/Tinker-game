@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+canvas {
+    display: block;
+}
+#ui {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: none;
+}
+.skill {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.skill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    pointer-events: none;
+}
+.skill.active {
+    outline: 3px solid cyan;
+}
+.skill .cd {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

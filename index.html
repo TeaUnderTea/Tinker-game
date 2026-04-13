@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="game"></canvas>
+    <!-- Панель скиллов (нужна, чтобы JS не падал при querySelectorAll) -->
+    <div id="ui">
+        <div class="skill" data-skill="q"><img src="q.png"><span class="cd"></span></div>
+        <div class="skill" data-skill="w"><img src="w.png"><span class="cd"></span></div>
+        <div class="skill" data-skill="e"><img src="e.png"><span class="cd"></span></div>
+        <div class="skill" data-skill="r"><img src="r.png"><span class="cd"></span></div>
+        <div class="skill" data-skill="x"><img src="x.png"><span class="cd"></span></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
